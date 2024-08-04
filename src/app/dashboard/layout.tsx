@@ -1,6 +1,6 @@
-// import Navbar from '@/app/(components) /Navbar';
 
-import Navbar from '../(components)/Navbar';
+import Navbar from '@/app/(components)/Navbar';
+import Sidebar from '@/app/(components)/Sidebar';
 
 type Props = {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ type Props = {
 const DashboardLayout = (props: Props) => {
   return (
     <div className={`light flex bg-gray-50 text-gray-900 w-full min-h-screen`}>
-      Sibebar
+      <Sidebar />
       <main className='flex flex-col h-full py-7 px-9  bg-gray-200 md:pl-24 '>
         <Navbar />
         {props.children}
